@@ -3,7 +3,7 @@
         <title>CHAVE DE OURO</title>
         <script type="text/javascript" src="database.js"></script>
         <script>
-            document.write(getListaTercido().forEach(function(item, index){
+            document.write(database_tercido.forEach(function(item, index){
                 document.write(index + ' : ' + item.desc + ' R$ ' + item.preco.toFixed(2) + item.medida + '<br>');
             }))
         </script>
