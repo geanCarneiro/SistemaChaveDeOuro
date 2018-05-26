@@ -1,14 +1,6 @@
 var database_malha = new Array();
-var database_tercido = new Array();
+var dbtercido = new DBTercido();
 
+dbtercido.add( 'Oxford Liso'    , 5.9  );
+dbtercido.add( 'Oxford Molange' , 12.9 );
 
-database_tercido.push({
-    desc : 'Oxford Liso',
-    preco : 4.9,
-    medida : 'Mt',
-});
-database_tercido.push({
-    desc : 'Oxford Molange',
-    preco : 12.9,
-    medida : 'Mt',
-});

@@ -1,11 +1,22 @@
 <html>
     <head>
         <title>CHAVE DE OURO</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="scriptGeral.js"></script>
+        <script type="text/javascript" src="Tercido.js"></script>
+        <script type="text/javascript" src="DBTercido.js"></script>
         <script type="text/javascript" src="database.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        
+    </head>
+    <body>
+        <div class="out"></div>
+        
         <script>
-            database_tercido.forEach(function(item, index){
-                document.write(index + ' : ' + item.desc + ' R$ ' + item.preco.toFixed(2).replace('.', ',') + ' ' + item.medida + '<br>');
+            document.getElementsByClassName('out')[0].innerHTML = '';
+            dbtercido.tercidos.forEach(function(item, index){
+                document.getElementsByClassName('out')[0].innerHTML += index + ' : ' + item.nome + ' -> ' + item.precoAsString() + '<br>';
             })
         </script>
-    </head>
+    </body>
 </html>

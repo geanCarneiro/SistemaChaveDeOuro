@@ -1,0 +1,1 @@
+var unidadeMedida = Object.freeze({ metros : 'Mt', kilos : 'Kg' });
